@@ -32,7 +32,7 @@ async function convertCurrency() {
                     }
                     if (data[i].quote === dst) {
                         let conversion = input.value*data[i].rate;
-                        message.textContent = input.value + " USD is equal to " + conversion +" " + dst; 
+                        message.textContent = input.value + " USD is equal to " + conversion + dst; 
                     }
                     
                 })
