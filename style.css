@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(210, 230, 233);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#conversion {
+    text-align: center;
+    padding: 5px;
+}
+
+button {
+    background-color: rgb(167, 184, 187);
+    margin: 5px;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+#container {
+    background-color: white;
+    width: 500px;
+    height: 250px;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 10px;
+    padding-bottom: 15px;
+    border: 2px solid  rgb(167, 184, 187);
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+select {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#message {
+    text-align: center;
+}

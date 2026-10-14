@@ -8,8 +8,10 @@ const destination = document.getElementById("destinationCurrency");
 async function convertCurrency() {
     try {
     let response = await fetch("https://api.frankfurter.dev/v2/rates?base=usd");
+    let response1 = await fetch("https://api.frankfurter.dev/v2/currencies ");
     let data = await response.json();
-    const dst = diffCurrency.value
+    let data1 = await response1.json();
+    console.log(data1);
     //const targetCurrency = diffCurrency;
     for (let i = 0; i < data.length; i++){
         const option = document.createElement("option");
@@ -21,8 +23,12 @@ async function convertCurrency() {
 
             //when user selects currency
             diffCurrency.addEventListener("change", () => {
-                if (data[i].quote === dst) {
-                    destination.textContent = `${data[i].rate} ${data[i].quote}`;
+                const dst = diffCurrency.value
+                if (data1[i].iso_code === dst){
+                    
+                    if (data[i].quote === dst) {
+                        destination.textContent = `${data[i].rate} ${data[i].quote} ${data1[i].name}`;
+                    }
                 }
                 convertBtn.addEventListener("click", () => {
                     if (input.value === "") {

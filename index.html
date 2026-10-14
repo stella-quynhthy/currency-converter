@@ -7,16 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Currecy Converter</h1>
-    <div id="conversion">
-        <p>1 USD = <span id="destinationCurrency"></span></p>
-        <input type="number" id="amount" placeholder="Enter amount in USD"> <br>
-        <select id="diffCurrency">
-            <option value="EUR">Select currency</option>
-        </select> <br>
-        <button id="convertBtn">Convert</button>
+    <div id="container">
+        <h1>Currency Converter</h1>
+        <div id="conversion">
+            <p>1 USD American Dollar = <span id="destinationCurrency"></span></p>
+            <input type="number" id="amount" placeholder="Enter amount in USD"> <br>
+            <select id="diffCurrency">
+                <option value="EUR">Select currency</option>
+            </select> <br>
+            <button id="convertBtn">Convert</button>
+        </div>
+        <p id="message"></p>
     </div>
-    <p id="message"></p>
     <script src="script.js"></script>
 </body>
 </html>
